@@ -25,7 +25,7 @@ jobs:
 
       - name: Slow down the snake (1.5x)
         run: |
-          python3 - <<'PY'
+          sudo python3 - <<'PY'
           import re, glob
           for f in glob.glob("dist/*.svg"):
               s = open(f).read()
